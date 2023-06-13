@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  db-contactos:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    container_name: db_contactos
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: contactos
